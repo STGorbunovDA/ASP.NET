@@ -22,4 +22,17 @@ builder.Services.AddRazorPages().AddRazorRuntimeCompilation();
 *Отметим, что для производственного окружения компиляции 
 в реальном времени обычно не рекомендуется из-за возможных проблем с производительностью и безопасностью.*
 
+**Ошибка 2:**
 
+*Консоль диспетчера пакетов отображает неверную кодировку*
+
+![picture for error_1](https://github.com/STGorbunovDA/ASP.NET/blob/main/source/img/error_2.png)
+
+**Решение:**
+
+*В терминале консоли ввести :*
+
+```
+setx DOTNET_CLI_UI_LANGUAGE "en-US"
+```
+*Перезагрузить VS*
